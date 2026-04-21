@@ -2,12 +2,15 @@
   "name": "frontend-app",
   "version": "1.0.0",
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
     "@testing-library/react": "latest",
     "@testing-library/jest-dom": "latest",
     "@testing-library/user-event": "latest",
     "msw": "latest",
-    "jest": "latest"
+    "jest": "latest",
+    "react-redux": "9.1.2",
+    "@reduxjs/toolkit": "2.2.3",
+    "axios": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
