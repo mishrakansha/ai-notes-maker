@@ -1,24 +1,74 @@
-*Automatically synced with your SandboxPro live project*
+## Prompts
 
-[![Hosted on SandboxPro](https://img.shields.io/badge/Hosted%20on-SandboxPro-blueviolet?style=for-the-badge)](https://code-sandbox.myanatomy.in/)
+JavaScript is a high-level, interpreted programming language used to build interactive web applications. It runs in the browser and also on servers using Node.js.
 
-## Overview
+Variables:
+There are three ways to declare variables in JavaScript:
+- var: function scoped (old, avoid using)
+- let: block scoped
+- const: block scoped and cannot be reassigned
 
-This repository is connected to your live project on [SandboxPro](https://code-sandbox.myanatomy.in), where you can build, run, and test full-stack applications in real time.
+Data Types:
+JavaScript has dynamic typing. Common data types include:
+- String
+- Number
+- Boolean
+- Undefined
+- Null
+- Object
+- Array
 
-## Live Project URL
+Functions:
+Functions are reusable blocks of code. They can be declared using:
+- function keyword
+- arrow functions (=>)
 
-You can check live preview url in your repository about section.
+Example:
+function add(a, b) {
+  return a + b;
+}
 
-## How It Works
+Arrow function:
+const add = (a, b) => a + b;
 
-1. Code your app using **C, C++, Java, Python, JavaScript**, or frontend frameworks like **React, HTML, CSS**
-2. Preview and test your code instantly with no setup
-3. Share live runnable project links with others
-4. Changes are instantly visible in the cloud editor
+Closures:
+A closure is a function that remembers variables from its outer scope even after the outer function has finished execution.
 
-## Build and Run More
+Promises:
+Promises are used for asynchronous operations. They have three states:
+- Pending
+- Resolved
+- Rejected
 
-Continue building projects on:
+Example:
+fetch("api/data")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
 
-**[https://code-sandbox.myanatomy.in](https://code-sandbox.myanatomy.in)**
+Async/Await:
+Async/await is a cleaner way to handle promises.
+
+Example:
+async function fetchData() {
+  try {
+    const res = await fetch("api/data");
+    const data = await res.json();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+DOM Manipulation:
+JavaScript can modify HTML using DOM methods like:
+- document.getElementById()
+- document.querySelector()
+
+Event Handling:
+JavaScript can respond to user actions like clicks, typing, etc.
+
+Example:
+button.addEventListener("click", () => {
+  console.log("Button clicked");
+});
